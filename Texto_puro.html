@@ -1,0 +1,508 @@
+<meta charset="UTF-8">
+
+
+<-- 
+<!1. Concatenando cáculos>
+<script>
+    document.write("Flávio tem " + (2016 - 1977) + " anos <br>");
+    document.write("Joaquim tem " + (2016 - 1996) + " anos <br>");
+    document.write("Barney tem " + (2016 - 1976) + " anos");
+</script>
+
+<br>
+<br>
+
+<!2. Concatenando cáculos e aplicação de variáveis>
+<script>
+    var ano = 2016;
+
+    document.write("Flávio tem " + (ano - 1977) + " anos <br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos <br>");
+    document.write("Barney tem " + (ano - 1976) + " anos <br><br>");
+
+
+    ano = 2017;
+
+    document.write("Flávio tem " + (ano - 1977) + " anos <br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos <br>");
+    document.write("Barney tem " + (ano - 1976) + " anos<br><br>");
+
+</script>
+
+<!3. Concatenando cáculos, aplicando variáveis e fórmula>
+<script>
+    var n=3
+
+    document.write("O resultado da fórmula é : " + n * (10 / 20) );
+
+</script>
+
+
+<script>
+    var minhaIdade = 20;
+
+    document.write("<br><br>Eu nasci em " + (2016 - minhaIdade) );
+</script>
+
+<!4.código que exibe na tela o resultado da tabuada de 5!>
+<script>
+    document.write("<br><br>5 vezes 1 é " + 5 * 1+ "<br>");
+    document.write("5 vezes 2 é " + 5 * 2+ "<br>");
+    document.write("5 vezes 3 é " + 5 * 3+ "<br>");
+    document.write("5 vezes 4 é " + 5 * 4+ "<br>");
+    document.write("5 vezes 5 é " + 5 * 5+ "<br>");
+    document.write("5 vezes 6 é " + 5 * 6+ "<br>");
+    document.write("5 vezes 7 é " + 5 * 7+ "<br>");
+    document.write("5 vezes 8 é " + 5 * 8+ "<br>");
+    document.write("5 vezes 9 é " + 5 * 9+ "<br>");
+    document.write("5 vezes 10 é " + 5 * 10+ "<br>");
+</script>
+
+<!5. Código que exibe na tela o resultado da tabuada de 8, com aplicação de variável>
+<script>
+    var tabuada = 8;
+    document.write("<br>" + tabuada + " vezes 1 é " + tabuada * 1 + "<br>");
+    document.write(tabuada + " vezes 2 é " + tabuada * 2 + "<br>");
+    document.write(tabuada + " vezes 3 é " + tabuada * 3 + "<br>");
+    document.write(tabuada + " vezes 4 é " + tabuada * 4 + "<br>");
+    document.write(tabuada + " vezes 5 é " + tabuada * 5 + "<br>");
+    document.write(tabuada + " vezes 6 é " + tabuada * 6 + "<br>");
+    document.write(tabuada + " vezes 7 é " + tabuada * 7 + "<br>");
+    document.write(tabuada + " vezes 8 é " + tabuada * 8 + "<br>");
+    document.write(tabuada + " vezes 9 é " + tabuada * 9 + "<br>");
+    document.write(tabuada + " vezes 10 é " + tabuada * 10 + "<br>");
+</script>
+
+<!6. Usando arredondamento>
+
+<script>
+    var ano = 2016;
+
+    document.write("<br><br>Flávio tem " + (ano - 1977) + " anos <br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos <br>");
+    document.write("Barney tem " + (ano - 1976) + " anos <br><br>");
+
+
+    ano = 2017;
+
+    document.write("Flávio tem " + (ano - 1977) + " anos <br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos <br>");
+    document.write("Barney tem " + (ano - 1976) + " anos<br><br>");
+
+    var media = (39 + 20 + 41)/3;
+
+    document.write('A média das idades é ' + Math.round(media));
+
+
+</script>
+
+
+<!7. Usando concatenação>
+
+<script>
+
+    var ano = 2016;
+
+    document.write("<br><br>Flávio tem " + (ano - 1977) + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    document.write("<br>");
+
+    ano = 2017;
+    document.write("Barney tem " + (ano - 1976) + " anos");
+    document.write("<br>");
+
+        document.write('A média das idades é  ' + (39 + 20 + 41)/3);
+
+</script>
+
+<!8. Estruturando o código com fórmulas>
+
+<script>
+
+    var ano = 2016;
+
+    document.write("<br><br>Flávio tem " + (ano - 1977) + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    document.write("<br>");
+
+    ano = 2017;
+    document.write("Barney tem " + (ano - 1976) + " anos");
+    document.write("<br>");
+
+        var idadeFlavio = 39;
+        var idadeJoaquim = 20;
+        var idadeBarney = 41;
+
+        var media = (idadeFlavio + idadeJoaquim + idadeBarney)/3;
+
+        document.write("A média das idades é " + Math.round(media));
+
+        var nome = "Flávio";
+
+        document.write("<br>");
+        document.write("A idade de " + nome + " é " + idadeFlavio);
+
+</script>
+
+<!9. Incorporando quebra de linha como variável>
+
+<script>
+
+    var ano = 2016;
+    var puloLinha = "<br>";
+
+    document.write(puloLinha);
+    document.write(puloLinha);
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    document.write(puloLinha);
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    document.write(puloLinha);
+
+    ano = 2017;
+    document.write("Barney tem " + (ano - 1976) + " anos");
+
+</script>
+
+
+
+
+
+
+<!10. Função pulalinha com parâmetro. A função x será pulalinha. Também a função mostra com parametro frase>
+
+<script>
+
+    function x() {
+
+        document.write("<br>");
+
+        document.write("<br>");
+
+}
+
+var ano = 2016;
+
+document.write("Flávio tem " + (ano - 1977) + " anos");
+
+x();
+
+document.write("Joaquim tem " + (ano - 1996) + " anos");
+
+x();
+
+ano = 2017;
+
+document.write("Barney tem " + (ano - 1976) + " anos");
+
+</script>
+
+
+<!11. criando a funnção mostra para aplicar document.write>
+
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+}
+
+function mostra(frase){
+
+    document.write(frase);
+    pulaLinha;
+
+}
+
+var ano = 2016;
+
+//document.write("Flávio tem " + (ano - 1977) + " anos");
+
+mostra("Flavio tem "+ (ano - 1977) + " anos");
+pulaLinha();
+
+// document.write("Joaquim tem " + (ano - 1996) + " anos");
+
+mostra("Joaquim tem "+ (ano - 1996) + " anos");
+pulaLinha();
+
+ano = 2017;
+
+// document.write("Barney tem " + (ano - 1976) + " anos");
+// document.write("Olá pessoal!");
+
+mostra("Barney tem "+ (ano - 1976) + " anos");
+pulaLinha();
+mostra("Olá, pessoal!");
+
+
+</script>
+
+<! 12 outro exercicio com funcao pulaLinha mostrando idades >
+
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    document.write("<br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+var ano = 2022;
+mostra("Eu nasci em : " + (ano - 25));
+mostra("Adriano nasceu em : " + (ano - 26));
+mostra("Paulo nasceu em : " + (ano - 32));
+
+</script>
+
+<!
+
+<! 13 outro exercicio com funcao calculando imc >
+
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    document.write("<br>");
+    document.write("<br>");
+    
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+    var pesoFlavio = 88;
+    var alturaFlavio = 1.73;
+
+    var imcFlavio = pesoFlavio / (alturaFlavio * alturaFlavio);
+
+    pulaLinha();
+    mostra("O imc do Flavio é "+ imcFlavio);
+
+    var pesoAmigo = 68;
+    var alturaAmigo = 1.72;
+    var imcAmigo = pesoAmigo / (alturaAmigo * alturaAmigo);
+    mostra("O imc do meu amigo é "+ imcAmigo);
+
+</script>
+
+
+<! 14 memso exercício anterior, mas com uso de função para permitir eventuais mudanças no cálculo>
+
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    document.write("<br>");
+    document.write("<br>");
+    
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+function calculaImc(altura, peso) {
+
+    var imc = peso / altura * altura;
+}
+
+    var pesoFlavio = 88;
+    var alturaFlavio = 1.73;
+
+    calculaImc(pesoFlavio, alturaFlavio);
+
+    var imcFlavio = pesoFlavio / (alturaFlavio * alturaFlavio);
+    
+    pulaLinha();
+    mostra("O imc do Flavio é "+ imcFlavio);
+
+    var pesoAmigo = 68;
+    var alturaAmigo = 1.72;
+
+    calculaImc(pesoAmigo, alturaAmigo);
+
+    mostra("O imc do meu amigo é "+ imcAmigo);
+
+</script>
+
+
+<! 15 funcao com passagem de parâmetro e retorno>
+
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    document.write("<br>");
+    document.write("<br>");
+    
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+function calculaImc(altura, peso) {
+
+    var imc = peso / altura * altura;
+    mostra("O imc calculado é "+ imc);
+}
+
+    var pesoFlavio = 88;
+    var alturaFlavio = 1.73;
+
+    calculaImc(pesoFlavio, alturaFlavio);
+
+    var imcFlavio = pesoFlavio / (alturaFlavio * alturaFlavio);
+    
+    pulaLinha();
+    
+
+    var pesoAmigo = 68;
+    var alturaAmigo = 1.72;
+
+    calculaImc(pesoAmigo, alturaAmigo);
+
+    
+
+</script>
+
+
+
+<! 16 outra funcao com passagem de parâmetro e retorno>
+
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    document.write("<br>");
+    document.write("<br>");
+    
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+function calculaImc(altura1, peso1, altura2, peso2) {
+
+    var imc1 = peso1 / (altura1 * altura1);
+    var imc2 = peso2 / (altura2 * altura2)
+    mostra("a soma dos imcs é "+ (imc1+imc2));
+}
+
+   
+    pulaLinha();
+
+    calculaImc(1.71, 73, 1.72, 68);
+
+    
+
+</script>      
+
+
+
+<! 17 forma mais inteligente de resolver passagem de parâmetro e retorno>
+
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    document.write("<br>");
+    document.write("<br>");
+    
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+function calculaImc(altura, peso) {
+
+    var imc = peso / (altura * altura);
+    return imc;
+}
+
+    var imcFlavio = calculaImc(1.71, 73);
+    var imcAmigo = calculaImc(1.72, 68);    
+   
+    mostra(imcFlavio);
+    mostra(imcAmigo);
+
+    pulaLinha();
+    
+
+</script>
+
+
+
+<! 18 interagindo e pedindo inputs do usuário>
+
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    document.write("<br>");
+    document.write("<br>");
+    
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+function calculaImc(altura, peso) {
+
+    var imc = peso / (altura * altura);
+    return imc;
+}   
+    var nome = prompt("Qual o seu nome? ");
+    var alturaInformada = prompt(nome + " informe sua altura: ");
+    var pesoInformado = prompt(nome + " informe seu peso: ");
+
+    var imc = calculaImc(alturaInformada, pesoInformado);
+
+    mostra(nome + " O seu IMC calculado é " + imc);
+
+    if(imc < 18.5) {
+
+mostra("Você está abaixo do recomendado");
+
+}
+
+if(imc > 35) {
+
+mostra("Você está acima do recomendado");
+}
+
+if(imc >= 18.5 && imc <= 35) {
+
+    mostra("Seu IMC está na margem aceitável!");
+    mostra("Continue se cuidando!");
+
+}
+
+
+
+    pulaLinha();
+    
+
+</script>
+
+--> 
+
